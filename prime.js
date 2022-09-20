@@ -2,7 +2,7 @@ function is_prime(num){
     let count =0;
     for(let i=0;i<num;i++){
         if(num%i==0){
-            count=2;
+            count++;
         }
     }
     if(count==2){
@@ -12,7 +12,7 @@ function is_prime(num){
 }
 let ans = is_prime(19);
 if(ans==true){
-    console.log("prime and composite both");
+    console.log("Prime Number");
 }else{
-    console.log("not prime");
+    console.log("Not a Prime Number");
 }
